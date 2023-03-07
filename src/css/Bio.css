@@ -1,0 +1,84 @@
+.bio-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 25px auto;
+  margin-bottom: 2rem;
+  border: 2px dashed grey;
+  max-width: 1200px;
+
+  text-align: center;
+  font-weight: 400;
+  font-style: bold;
+  border-radius: 25px;
+}
+
+.bio-card {
+  display: flex;
+  font-size: 12pt;
+  margin-right: 4rem;
+}
+
+.bio-title {
+  font-weight: 800;
+  font-size: 16pt;
+  margin-top: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bio-title {
+    color: whitesmoke;
+  }
+
+  .bio-info {
+    color: whitesmoke;
+  }
+}
+
+.bio-image {
+  margin: 1rem 0rem 1rem 1rem;
+  object-fit: cover;
+  max-width: 360px;
+  max-height: 280px;
+  border-radius: 15px;
+}
+
+.bio-info {
+  font-size: 12pt;
+  text-align: left;
+  padding: 0 2rem 1em;
+}
+
+.bio-button {
+  font-size: 14pt;
+  font-weight: 800;
+}
+
+@media (max-width: 642px) {
+  .bio-image {
+    display: none;
+  }
+  .bio-image {
+    visibility: hidden;
+  }
+
+  .bio-container {
+    border: none;
+  }
+
+  .bio-info {
+    font-size: 12pt;
+    text-align: left;
+  }
+
+  .bio-title {
+    margin-bottom: 1em;
+  }
+
+  .bio-card {
+    height: 100%;
+    margin-right: 0em;
+  }
+}

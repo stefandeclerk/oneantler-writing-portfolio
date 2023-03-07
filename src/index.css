@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Montserrat&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  animation: change 5s linear 5s infinite ease-in-out;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes change {
+  0% {
+    background-color: lightgreen;
+  }
+  20% {
+    background-color: dodgerblue;
+  }
+  40% {
+    background-color: hotpink;
+  }
+  60% {
+    background-color: gold;
+  }
+  80% {
+    background-color: tomato;
+  }
+  100% {
+    background-color: #bada55;
+  }
+}

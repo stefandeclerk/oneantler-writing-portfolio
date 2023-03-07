@@ -1,0 +1,103 @@
+.card-container {
+  max-width: 360px;
+  justify-content: center;
+  margin: 0 auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.card {
+  background-color: black;
+  border-radius: 25px;
+  margin: 1vw;
+  display: flex;
+  flex-direction: column;
+  color: whitesmoke;
+  padding: 1rem;
+}
+
+.pics {
+  max-width: 328px;
+  max-height: 600px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.card-title {
+  font-size: 20px;
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  text-align: left;
+}
+
+.card-blurb {
+  font-size: 14px;
+  line-height: 150%;
+  text-align: left;
+  padding: 0 0.5em 1em 0;
+}
+
+.tag-container {
+  display: flex;
+  padding-top: 0.35em;
+}
+
+.tag-card {
+  padding: 0.25em 0.5em;
+  margin: 0.5em 0;
+  border: 1px solid whitesmoke;
+  border-radius: 50px;
+  font-size: 0.6em;
+  color: whitesmoke;
+  text-align: left;
+  background-color: black;
+  font-family: "Libre Baskerville", serif;
+}
+
+.box {
+  width: 20px;
+  height: 20px;
+}
+
+.box[data-expanded="true"] {
+  width: 150px;
+  height: 150px;
+}
+
+.card-expand .card-container {
+  visibility: hidden;
+}
+
+.modalBackground {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(200, 200, 200);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modalContainer {
+  width: 500px;
+  height: 500px;
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+
+@media (max-width: 784px) {
+  .grid-container {
+    margin-top: 2.5em;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .card {
+    background-color: whitesmoke;
+    color: black;
+  }
+}

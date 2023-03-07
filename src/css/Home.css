@@ -1,0 +1,100 @@
+p {
+  margin: 0;
+}
+
+.home {
+  margin: 0;
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  
+}
+
+.home-header {
+  animation: myfirst 150s linear infinite alternate;
+  background-color: grey;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  padding: 0%;
+}
+
+
+@keyframes myfirst {
+  0% {background-color: #bada55;}
+  20% { background-color: dodgerblue;}
+  40% { background-color: hotpink;}
+  60% { background-color: gold;}
+  80% {background-color: tomato;}
+  100% {background-color: #bada55;}
+}
+
+.one-antler-logo {
+  height: 1em;
+  pointer-events: none;
+  padding-bottom: 0.2em;
+  padding-right: 0.1em;
+}
+
+
+.logo-title {
+  font-size: 7em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Libre Baskerville', serif;
+}
+
+.logo-sub {
+  font-size: 1.4em;
+  margin-top: -1rem;
+}
+
+.logo-info {
+  margin: 0;
+}
+
+.home-link {
+  color: #61dafb;
+}
+
+.down-arrow {
+  position:absolute;
+  bottom: 2rem;
+}
+
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 468px) {
+  .logo-sub {
+  
+  margin-top: 0;
+}
+}
+
+/* Screen larger than 768px? 2 column */
+@media (min-width: 768px) {
+  .properties { grid-template-columns: repeat(2, 1fr); }
+}
+
+/* Screen larger than 992px? 3 columns */
+@media (min-width: 1200px) {
+  .properties { 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto); 
+  }
+}
+
+

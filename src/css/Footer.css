@@ -1,0 +1,27 @@
+
+.footer-frame {  
+color: black;
+padding: 1.5em;
+position: relative;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+text-align: center;
+font-family: 'Libre Baskerville', serif;
+font-size: 0.75rem;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .footer-copy {
+    color: whitesmoke;
+}
+
+.footer-frame {
+    color: whitesmoke;
+}
+  
+}
+
+
+
